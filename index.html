@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>My Flipboard Website</title>
+        
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="js/modernizr.custom.08464.js"></script>
+		<script id="pageTmpl" type="text/x-jquery-tmpl">
+			<div class="${theClass}" style="${theStyle}">
+				<div class="front">
+					<div class="outer">
+						<div class="content" style="${theContentStyleFront}">
+							<div class="inner">{{html theContentFront}}</div>
+						</div>
+					</div>
+				</div>
+				<div class="back">
+					<div class="outer">
+						<div class="content" style="${theContentStyleBack}">
+							<div class="inner">{{html theContentBack}}</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</script>
+    </head>
+    <body>
+		
+		<header class="main-title">
+			<h1>Welcome To My Flip Page</h1>
+			<p>Swipe or flip and Know More about my Webpage</p>
+			<a href="#">Explore</a>
+		</header>
+		
+		<div id="flip" class="container">
+		
+			<div class="f-page f-cover">
+				<div class="cover-elements">
+					<div class="f-cover-story"><span>Shaikh Muzaker</span>Front End Developer</div>
+				</div>
+				<div class="f-cover-flip">&lt; Flip</div>
+				<div class="cover"><h2>I'm Passionate Front End Develepor<br> and Love to Build Websites.</h2></div>
+			</div>
+			
+			<div class="f-page">
+			
+				
+					<div class="img-cont img-1" id="img-1-2"></div>
+					<div class="img-cont img-1-1" id="img-1-2">
+						<h1>A Great Begining to Know Me...!</h1>
+						<p>I am a Front End Developer in Zonal Tech Solution. I specialise in website design and development. I create beautiful, usable, professional websites using best practice accessibility and the latest W3C web standards guidelines, resulting in semantic and seo friendly XHTML and CSS. All my websites are lovingly hand coded.</p>
+						<p style="text-align: right; font-size:12px; font-family: cursive;">- Shaikh Muzaker</p>
+					</div>
+
+
+			</div>
+			
+			<div class="f-page">
+			
+					<div class="img-cont img-1-1" id="img-1-1">
+						<h1>My Skills..</h1>
+						<div class="skillbar clearfix ">
+					<div class="skillbar-title" style="background: #d35400; width: 80%;"><span>HTML5</span></div>
+						<div class="skillbar-bar" style="background: #e67e22;"></div>
+						<div class="skill-bar-percent">80%</div>
+					</div> <!-- End Skill Bar -->
+
+					<div class="skillbar clearfix " data-percent="25%">
+						<div class="skillbar-title" style="background: #2980b9; width: 70%"><span>CSS3</span></div>
+						<div class="skillbar-bar" style="background: #3498db;"></div>
+						<div class="skill-bar-percent">70%</div>
+					</div> <!-- End Skill Bar -->
+
+					<div class="skillbar clearfix " data-percent="50%">
+						<div class="skillbar-title" style="background: #2c3e50; width: 60%"><span>Javascript</span></div>
+						<div class="skillbar-bar" style="background: #2c3e50;"></div>
+						<div class="skill-bar-percent">60%</div>
+					</div> <!-- End Skill Bar -->
+
+					<div class="skillbar clearfix " data-percent="40%">
+						<div class="skillbar-title" style="background: #46465e; width: 40%"><span>PHP</span></div>
+						<div class="skillbar-bar" style="background: #5a68a5;"></div>
+						<div class="skill-bar-percent">40%</div>
+					</div> <!-- End Skill Bar -->
+
+					<div class="skillbar clearfix " data-percent="75%">
+						<div class="skillbar-title" style="background: #333333; width: 70%"><span>Wordpress</span></div>
+						<div class="skillbar-bar" style="background: #525252;"></div>
+						<div class="skill-bar-percent">70%</div>
+					</div> <!-- End Skill Bar -->
+
+					<div class="skillbar clearfix " data-percent="100%">
+						<div class="skillbar-title" style="background: #27ae60; width: 60%"><span>Jquery</span></div>
+						<div class="skillbar-bar" style="background: #2ecc71;"></div>
+						<div class="skill-bar-percent">60%</div>
+					</div> <!-- End Skill Bar -->
+						
+					</div>
+					<div class="img-cont img-2"></div>
+
+			</div>
+			
+			<div class="f-page">
+			
+				
+					<div class="img-cont img-3"></div>
+					<div class="img-cont img-1-2" style="margin-top: 25px;">
+						<h1>My Portfolio...</h1>
+						<div class="p-1" style="margin-bottom: 25px;">
+							<div class="p-2">
+								<div class="sub-p">
+									<img src="images/p-1.png">
+								</div>
+								<div class="sub-p">
+									<img src="images/p-2.png">
+								</div>
+							</div>
+						</div>
+						<div class="p-1">
+							<div class="p-2">
+								<div class="sub-p">
+									<img src="images/p-3.png">
+								</div>
+								<div class="sub-p">
+									<img src="images/p-4.png">
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+			</div>
+			
+			<div class="f-page f-cover-back">
+				<div id="codrops-ad-wrapper">
+					
+				</div>
+			</div>
+		</div>
+	
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="skill.js"></script>
+		<script type="text/javascript">
+				
+			var $container 	= $( '#flip' ),
+				$pages		= $container.children().hide();
+			
+			Modernizr.load({
+				test: Modernizr.csstransforms3d && Modernizr.csstransitions,
+				yep : ['js/jquery.tmpl.min.js','js/jquery.history.js','js/core.string.js','js/jquery.touchSwipe-1.2.5.js','js/jquery.flips.js'],
+				nope: 'css/fallback.css',
+				callback : function( url, result, key ) {
+					
+					if( url === 'css/fallback.css' ) {
+						$pages.show();
+					}
+					else if( url === 'js/jquery.flips.js' ) {
+						$container.flips();
+					}
+			
+				}
+			});
+				
+		</script>
+    </body>
+</html>
